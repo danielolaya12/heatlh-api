@@ -16,7 +16,7 @@ CREATE TABLE patient_data (
 );
 
 COPY patient_data(gender, age, hypertension, heart_disease, smoking_history, bmi, HbA1c_level, blood_glucose_level, diabetes)
-FROM '/private/tmp/diabetes_prediction_dataset.csv'
+FROM 'diabetes_prediction_dataset.csv'
 WITH (FORMAT CSV, HEADER);
 
 COMMIT TRANSACTION;
